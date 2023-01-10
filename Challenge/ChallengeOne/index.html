@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <script src="site.js"></script>
+    <script src="script.js"></script>
+    <title>Encriptador</title>
+</head>
+<body>
+    <div class="container">
+        {navbar}
+        <section class="containerSection">
+            <div class="wraperText">
+                <textarea 
+                    class="texto"
+                    cols="2"
+                    rows="3"
+                    name="textarea" 
+                    id="texto" 
+                    placeholder="Ingrese en texto aqui"
+                    required
+                    autofocus
+                    onclick=""
+                ></textarea>
+            </div>
+            <div class="containerButton">
+                <div  class="containerImagenParrafo">
+                    <img class="imagenInfo" src="./imagenes/image(6).svg" alt="muñeco"/>
+                    <p class="parrafo1"> {parrafo1} </p>
+                </div>
+                <div class="wraperButton">
+                    <button onclick="encriptador()" id="encriptar" class="buttonOne">{button1}</button>
+                    <button onclick="desencriptador()" id="desencriptar" class="buttonTwo">{button2}</button>
+                </div>
+            </div>
+        </section>
+    </div>
+    <sidebar class="containerSidebar">
+        <div class="wrapperMuneco">
+            <img class="muneco" src="./imagenes/image(2).svg" alt="muñeco"/>
+            <p class="parrafo2">{parrafo2}</p>
+            <p class="parrafo3">{parrafo3}</p>
+        </div>
+        <button onclick="copiar()" id="copiar" class="buttonThree">{button3}</button>
+    </sidebar>
+</body>
+
+</html>
